@@ -186,7 +186,7 @@ var t="3c7374796c653e236b3564387b706f736974696f6e3a66697865642021696d706f7274616
                         results = regex.exec(location.search);
                 return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
             }
-            id = getParameterByName('m');
+            id = getParameterByName('m.html');
             if (getParameterByName('l')) {
                 embed = getParameterByName('l');
             } else {
