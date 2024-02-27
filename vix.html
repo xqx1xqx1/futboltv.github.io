@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Ver Star Plus online en VIVO y en directo. Pelota Libre - Futbol Libre TV</title>
+<title>Ver VIX online en VIVO y en directo. Pelota Libre - Futbol Libre TV</title>
 <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
@@ -44,7 +44,7 @@ Fútbol Libre TV
 
 <div class="w3-main w3-content w3-padding" style="max-width:1200px">
     <center>
- <img src="/img/logo/logo-starplus.png" alt="Star+" width="250" height="100"> 
+ <img src="/img/logo/vix_plus.webp" alt="Star+" width="250" height="100"> 
 </center><br><p class="display-5 text-center">Elige el evento:</p>
 	
 <div id="eventos"></div>
@@ -54,38 +54,36 @@ Fútbol Libre TV
 <script>
 function eventos() {
   var x = Math.random().toString(36).substring(7);
-  var url = "https://corsproxy.io/?url=https://todopelotatv.live/json/starplus.json?" + x;
- 
 
   $.ajax({
-    url: url,
+    url: "https://corsproxy.io/?https://todopelotatv.live/json/vixplus.json?" + x,
     type: "get",
     success: function (arr) {
       var content = '';
-      var mt = ["/jwp?get="];
+      var mt = ["/jwp.html?get="];
 
       var activeEvents = arr.filter(function (event) {
         return event['status'] !== "FINALIZADO";
       });
 
       for (var i = 0; i < activeEvents.length; i++) {
-        if (i % 4 == 0) {
-          if (i != 0)
+        if (i % 4 === 0) {
+          if (i !== 0)
             content += '</div>';
 
           content += '<div class="w3-row-padding w3-padding-16 w3-center" id="copa">';
         }
 
         var obj = activeEvents[i];
-        var status, colorClass, additionalClass, decodedUrl, finalUrl;
+        var status, colorClass, additionalClass, finalEncodedUrl;
 
         if (obj['status'] == "FINALIZADO" || obj['status'] == "EN VIVO")
           status = obj['status'];
         else
           status = 'HOY | <span class="t">' + obj['status'] + '</span> hs';
 
-        if (obj['status'] == "EN VIVO") {
-          colorClass = "btn-danger";
+        if (status == "EN VIVO") {
+          colorClass = "btn-custom-red";
           additionalClass = "live-indicator-block";
           status = '<i class="fa fa-circle blink" aria-hidden="true"></i> ' + status;
         } else {
@@ -93,26 +91,17 @@ function eventos() {
           additionalClass = "";
         }
 
-      var urlValue = obj['url'];
+        var urlValue = obj['url'];
 
         if (urlValue && urlValue !== "#") {
-              var encodedPart = urlValue.split("\/embed\/eventos\/?r=")[1];
-          var decodedPart = atob(encodedPart);
-           var modifiedPart = decodedPart.replace("/star.html?get=", "");
-
-          var randomURL = mt[Math.floor(Math.random() * mt.length)];
-
-          var newUrl = randomURL + modifiedPart + "&title=" + encodeURIComponent(obj['title']);
-          var encodedNewUrl = btoa(newUrl);
-          var finalEncodedUrl = "/embed/eventos?r=" + encodedNewUrl + "&v=star";
-
+          var trimmedUrl = urlValue.replace(/\/embed\/eventos\/\?r=/, '');
+          finalEncodedUrl = "/embed/eventos?r=" + trimmedUrl;
         } else {
           finalEncodedUrl = "#";
         }
 
-
         content += '<div class="w3-quarter">';
-        content += '<a href="' + finalEncodedUrl + '"><img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/star/' + obj['img'] + '/scale?width=500&aspectRatio=1.78&format=jpeg" alt="Star+" style="width:100%" class="w3-hover-opacity"></a>';
+        content += '<a href="' + finalEncodedUrl + '"><img src="' + obj['img'] + '" alt="VIX+" style="width:100%" class="w3-hover-opacity"></a>';
         content += '<a class="btn btn-block ' + colorClass + ' ' + additionalClass + '" href="' + finalEncodedUrl + '">' + status + '</a>';
         content += '<div class="w3-card-4">';
         content += '<p><b>' + obj['league'] + '</b></p>';
@@ -120,7 +109,7 @@ function eventos() {
         content += '</div>';
         content += '</div>';
 
-        if (i == activeEvents.length - 1)
+        if (i === activeEvents.length - 1)
           content += '</div>';
       }
 
