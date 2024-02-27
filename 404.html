@@ -1,0 +1,81 @@
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404 - Página no encontrada</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+            background: linear-gradient(45deg, #f8f8f8 25%, transparent 25%, transparent 75%, #f8f8f8 75%, #f8f8f8), linear-gradient(45deg, #f8f8f8 25%, transparent 25%, transparent 75%, #f8f8f8 75%, #f8f8f8);
+            background-size: 40px 40px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #d9534f;
+        }
+
+        p {
+            color: #333333;
+        }
+
+        .redirect-message {
+            font-size: 18px;
+            color: #5bc0de;
+            margin-top: 20px;
+        }
+
+        .redirect-link {
+            color: #5bc0de;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #countdown {
+            font-size: 24px;
+            color: #333333;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Error 404 - Página no encontrada</h1>
+        <p>Lo sentimos, la página que estás buscando no existe.</p>
+        <p class="redirect-message">Serás redirigido a <a class="redirect-link" href="https://megadeportestv2.com">megadeportestv2.com</a> en <span id="countdown">1</span> segundos.</p>
+    </div>
+
+    <script>
+        let seconds = 10;
+
+        function updateCountdown() {
+            document.getElementById('countdown').textContent = seconds;
+        }
+
+        function countdown() {
+            updateCountdown();
+            seconds--;
+
+            if (seconds < 0) {
+                window.location.href = "https://megadeportestv2.com";
+            } else {
+                setTimeout(countdown, 1000);
+            }
+        }
+
+        countdown();
+    </script>
+
+
+</body></html>
