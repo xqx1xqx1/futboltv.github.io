@@ -71,7 +71,7 @@ function eventos() {
     type: "get",
     success: function (arr) {
       var content = '';
-      var mt = ["/jwnb?get="];
+      var mt = ["/jwnb?"];
 
       var activeEvents = arr.filter(function (event) {
         return event['status'] !== "FINALIZADO";
