@@ -183,9 +183,7 @@ video:-webkit-full-screen + .bitmovinplayer-ctrl {
     display: none!important;
     -webkit-appearance: none;
 }
-</style>
-<script src="//www.gstatic.com/cast/sdk/libs/sender/1.0/cast_framework.js"></script>
-<script src="//www.gstatic.com/eureka/clank/120/cast_sender.js"></script>
+</style><script src="//www.gstatic.com/cast/sdk/libs/sender/1.0/cast_framework.js"></script><script src="//www.gstatic.com/eureka/clank/120/cast_sender.js"></script>
 </head>
 <div id="player"></div>
 <script type="text/javascript">
@@ -202,7 +200,7 @@ video:-webkit-full-screen + .bitmovinplayer-ctrl {
   </script>
 <script type="text/javascript">
   var referrer =  document.referrer;
-   if((referrer.indexOf("pelotalibre.online") > -1) || /iPad|iPod|BlackBerry|IEMobile|webOS|Opera Mini/i.test(navigator.userAgent)) {
+   if((referrer.indexOf("futboltv.lat") > -1) || /iPad|iPod|BlackBerry|IEMobile|webOS|Opera Mini/i.test(navigator.userAgent)) {
 var container = document.getElementById('player');
 
 function override(url) {
@@ -233,17 +231,17 @@ const config = {
   }
 };
 
-fetch("/n.json")
+fetch("https://corsproxy.io/?url=https://pelotalibre.online/l.json")
   .then(response => response.json())
   .then(jsonResponse => {
 
     var source = {
       hls: "https://nbalpng.akamaized.net/live/a/hls-wvpr/" + getHLS + "/index.m3u8?addUserInfo=1",
-      title: '',
+      title: 'NBA',
       description: '',
       drm: {
         widevine: {
-          LA_URL: "https://ottapp-appgw-amp.nba.com/v1/client/get-widevine-license?ownerUid=azuki&mediaId=" + getHLS + "&sessionId=5e0b8a97-3d2e-4188-9590-f00f5f8629a2&is_dvr=false",
+          LA_URL: "https://ottapp-appgw-amp.nba.com/v1/client/get-widevine-license?ownerUid=azuki&mediaId=" + getHLS + "&sessionId=00000000-0000-0000-0000-000000000000&is_dvr=false",
           headers: {
             applicationtoken: getDATA,
             authorizationtoken: jsonResponse.authorizationtoken,
