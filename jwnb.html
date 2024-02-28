@@ -233,7 +233,7 @@ const config = {
   }
 };
 
-fetch("https:///pelotalibre.online/n.json")
+fetch("https:///pelotalibre.online/n.json?")
   .then(response => response.json())
   .then(jsonResponse => {
 
@@ -246,9 +246,9 @@ fetch("https:///pelotalibre.online/n.json")
           LA_URL: "https://ottapp-appgw-amp.nba.com/v1/client/get-widevine-license?ownerUid=azuki&mediaId=" + getHLS + "&sessionId=5e0b8a97-3d2e-4188-9590-f00f5f8629a2&is_dvr=false",
           headers: {
             applicationtoken: getDATA,
-            authorizationtoken: jsonResponse.authorizationtoken,
-            azukiimc: jsonResponse.azukiimc,
-            deviceprofile: jsonResponse.deviceprofile
+            authorizationtoken: "AuthToken1jVHbbtswDP2a-E2BRV0sPfjBaLs16IoNazr0VZbpRI1tGZLcNv36Kb1swLANBQSKODyHJA6bpXM4Waz3Kc1xxZoVfMov4HB00242IR3Xc_CdWU-tWacHZge_dGvrx8wqNjEuGP7QxhT_Izlxf1PtHkcT10_jEL2Z1z7sMvoYc4CyFPl7Ca7DKbl0zKkdjBtP9cmMWC-RyKriioImkumWcNNqYsCUpDfK0N6UEisotjiZKW26usPeLEMqzvHBWcyAtA9J6JYTO6uBHA7DQrzs94TRe0TU9qBxfmNvjzPWGx-3ph0wFc0w-Efs3lvHX71vI4bc-aO7Ndb65WU5bnhfgrak76whnAESbSUQhSVVtJXQS5V3eZnyNuRDkr9aPjobfPR9ejvMu-nqZLr8h-nBD1jHpY02uBZD0Sxp74N7Nsn56drEQ02FppxxJqSglNEKBFe6AmBU81JqBVIqxYByoaUCIaigILVQpVZSlECBaWC8pCznogIOSlCZE1VcPM0uYPw61bQq9UkKtDgLaBJ2r2DmySqDV3j8vLiu7nupsbJAhGId4ZXgRElQRNJ8cOxAS02Ly-vm7OayASHr2X1xm3Dz4_J72IXt3dUKWnb1zc9KhqcbKaf24lzf3bNb9_w47las-wk",
+            azukiimc: "IMC7.1.0_AN_D3.0.0_S0",
+            deviceprofile: "eyJtb2RlbCI6IkRlc2t0b3AiLCJvc1ZlcnNpb24iOiIxMCIsInZlbmRvck5hbWUiOiJNaWNyb3NvZnQiLCJvc05hbWUiOiJIVE1MNSIsInd2TGV2ZWwiOiJMMyIsImRldmljZVVVSUQiOiI5YjEyYTQwYjJhODg0MGY4YmIxNGE2M2E1NWY0MzE3OCJ9"
           }
         }
       }
