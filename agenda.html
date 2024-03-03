@@ -1,481 +1,835 @@
-
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <script type="text/javascript" src="/smallscripts.js?agenda"></script>
-        <meta http-equiv="refresh" content="200"/>
-        <meta http-equiv="cache-control" content="no-cache" />
-        <meta http-equiv="Pragma" content="no-cache" />
-        <meta http-equiv="expires" content="-1" />
-        <meta name="googlebot" content="noindex">
-        <title>Agenda Deportiva - Pelota Libre Online</title>
-        <script>
-            function timedRefresh(timeoutPeriod) {
-                setTimeout("location.reload(true);", timeoutPeriod);
-            }
-            window.onload = timedRefresh(30000);
-        </script>
-        <style type="text/css">
-            /*            body{font-size:100%}@media only screen and (max-width:600px){body{font-size:70%}}a{text-decoration:none}ul,ul ul{margin:0;padding:0;list-style:none}#wraper{width:100%;margin:0 auto;font-size:.8125em}.menu{width:auto;height:auto;-webkit-box-shadow:0 1px 3px 0 rgba(0,0,0,.73),0 0 18px 0 rgba(0,0,0,.1);-moz-box-shadow:0 1px 3px 0 rgba(0,0,0,.73),0 0 18px 0 rgba(0,0,0,.1);box-shadow:0 1px 3px 0 rgba(0,0,0,.73),0 0 18px 0 rgba(0,0,0,.1)}.menu>li>a{background-color:#000000;background-image:-webkit-gradient(linear,left top,left bottom,from(rgb(255, 255, 255)),to(rgb(80, 88, 100)));background-image:-webkit-linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));background-image:-moz-linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));background-image:-o-linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));background-image:-ms-linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));background-image:linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#727a86',EndColorStr='#505864');border-bottom:0 solid #33373d;-webkit-box-shadow:inset 0 1px 0 0 #878e98;-moz-box-shadow:inset 0 1px 0 0 #878e98;box-shadow:inset 0 1px 0 0 #878e98;width:100%;height:2.8em;line-height:2.8em;text-indent:7.9em;display:block;position:relative;font-family:arial,Arial,Helvetica,sans-serif;font-weight:600;color:#404040;font-size:1em;text-shadow:0 0 0 #000}.menu ul li a{background:#fff;border-bottom:1px solid #efeff0;width:100%;height:2.8em;line-height:2.8em;text-indent:3.75em;display:block;position:relative;font-family:"Arial", Arial, Helvetica, sans-seri;font-size:1em;font-weight:500;color:#778899}.menu ul li:last-child a{border-bottom:1px solid #33373d}.menu>li>a:hover,.menu>li>a.active{background-color:#35afe3;background-image:-webkit-gradient(linear,left top,left bottom,from(rgb(128, 128, 128)),to(rgb(128, 128, 128)));background-image:-webkit-linear-gradient(top,rgb(128, 128, 128),rgb(128, 128, 128));background-image:-moz-linear-gradient(top,rgb(128, 128, 128),rgb(128, 128, 128));background-image:-o-linear-gradient(top,rgb(128, 128, 128),rgb(128, 128, 128));background-image:-ms-linear-gradient(top,rgb(128, 128, 128),rgb(128, 128, 128));background-image:linear-gradient(top,rgb(128, 128, 128),rgb(128, 128, 128));filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#606060',EndColorStr='#202020');border-bottom:1px solid #404040;-webkit-box-shadow:inset 0 1px 0 0 #404040;-moz-box-shadow:inset 0 1px 0 0 #404040;box-shadow:inset 0 1px 0 0 #404040}.menu>li>a.active{border-bottom:0 solid #404040}.menu>li>a:before{content:'';background-image:url(/img/sprite_2.png);background-repeat:no-repeat;font-size:36px;height:1em;width:1em;position:absolute;left:55;top:50%;margin:-.5em 0 0}@media only screen and (max-width:600px){.menu>li>a:before{left:30}}.COL>a:before{background-position:0 0}.MEX>a:before{background-position:-38px 0}.ES>a:before{background-position:0 -38px}.PE>a:before{background-position:-38px -38px}.ENG>a:before{background-position:-76px 0}.FRA>a:before{background-position:-76px -38px}.USA>a:before{background-position:0 -76px}.CONNAT>a:before{background-position:-38px -76px}.IT>a:before{background-position:0 -114px}.BRA>a:before{background-position:-38px -114px}.ALE>a:before{background-position:-76px -76px}.POR>a:before{background-position:-76px -114px}.CH>a:before{background-position:0 -152px}.ECUA>a:before{background-position:-38px -152px}.URU>a:before{background-position:0 -190px}.EURO>a:before{background-position:-38px -190px}.AR>a:before{background-position:-76px -152px}.AMERICA>a:before{background-position:-76px -190px}.TUR>a:before{background-position:0 -228px}.NBA>a:before{background-position:-38px -228px}.CHA>a:before{background-position:0 -266px}.UFC>a:before{background-position:-38px -266px}.MOTOGP>a:before{background-position:-76px -228px}.F1>a:before{background-position:-76px -266px}.FIFA>a:before{background-position:0 -304px}.ARA>a:before{background-position:-38px -304px}.WWE>a:before{background-position:0 -342px}.FUT>a:before{background-position:-38px -342px}.SUD>a:before{background-position:-76px -304px}.CICLI>a:before{background-position:-76px -342px}.LIB>a:before{background-position:0 -380px}.CONGOLD>a:before{background-position:-38px -380px}.BAS>a:before{background-position:0 -418px}.TE>a:before{background-position:-38px -418px}.BOX>a:before{background-position:-76px -380px}.UE>a:before{background-position:-76px -418px}.ELIE>a:before{background-position:0 -456px}.UEC>a:before{background-position:-38px -456px}.NFL>a:before{background-position:-76px -456px}.ELI>a:before{background-position:0 -494px}.ORO>a:before{background-position:-38px -494px}.INTER>a:before{background-position:-76px -494px}.ELICON>a:before{background-position:0 -532px}.VOLEY>a:before{background-position:-38px -532px}.RUG>a:before{background-position:-76px -532px}.NAT>a:before{background-position:0 -570px}.MLB>a:before{background-position:-38px -570px}.CON>a:before{background-position:-76px -570px}.INDY>a:before{background-position:0 -608px}.HOL>a:before{background-position:-38px -608px}.BEL>a:before{background-position:-76px -608px}.OLIM>a:before{background-position:0 -646px}.SUPERCUP>a:before{background-position:-38px -646px}.NONE3>a:before{background-position:-74 -645px}.REC>a:before{background-position:-74 -645px}.NONE6>a:before{background-position:-74 -645px}.AFC>a:before{background-position:-38px -494px}.menu>li>a span{font-size:.95em;display:inline-block;position:absolute;left:.3em;top:50%;background:#fff;line-height:1em;height:1em;padding:.3em .6em;margin:-.8em 0 0;color:#222d36;text-indent:0;text-align:center;-webkit-border-radius:.769em;-moz-border-radius:.769em;border-radius:.569em;-webkit-box-shadow:inset 0 1px 3px 0 rgba(0,0,0,.16),0 1px 0 0 rgba(63,68,74,.1);-moz-box-shadow:inset 0 1px 3px 0 rgba(0,0,0,.16),0 1px 0 0 rgba(63,68,74,.1);box-shadow:inset 0 1px 3px 0 rgba(0,0,0,.16),0 1px 0 0 rgba(63,68,74,.1);text-shadow:0 1px 0 rgba(0,0,0,.5);font-weight:500}.menu>li>a:hover span,.menu>li a.active span{background:404040}.menu>li>ul li a:before{content:'►';font-size:9px;color:#789;position:absolute;width:1em;height:1em;top:0;left:-2.7em}.menu>li>ul li:hover a,.menu>li>ul li:hover a span,.menu>li>ul li:hover a:before{color:#2e9afe}.menu ul>li>a span{font-size:.857em;display:inline-block;position:absolute;right:1em;top:50%;/background:#fff;border:1px solid #d0d0d3;line-height:1em;height:1em;padding:.4em .7em;margin:-.9em 0 0;color:#000;text-indent:0;text-align:center;-webkit-border-radius:.769em;-moz-border-radius:769em;border-radius:769em;text-shadow:0 0 0 rgba(255,255,255,.01))}div.sombreada_css3{background-color:#3069db;width:100%px;padding:12px;color:#039;box-shadow:0 1px 1px #333;-webkit-box-shadow:0 1px 1px #333;-moz-box-shadow:0 1px 1px #333}}*/
-            /*@charset "UTF-8"; body{ font-size: 100%;background:}a {text-decoration: none}ul,ul ul {margin: 0;padding: 0;list-style: none}#wraper {width: 100%;margin: 0 auto;font-size: .8125em}.menu {width: auto;height: auto;-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .73), 0 0 18px 0 rgba(0, 0, 0, .1);-moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .73), 0 0 18px 0 rgba(0, 0, 0, .1);box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .73), 0 0 18px 0 rgba(0, 0, 0, .1)}.menu>li>a { background-color:#000000;background-image:-webkit-gradient(linear,left top,left bottom,from(rgb(255, 255, 255)),to(rgb(80, 88, 100)));background-image:-webkit-linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));background-image:-moz-linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));background-image:-o-linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));background-image:-ms-linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));background-image:linear-gradient(top,rgb(255, 255, 255),rgb(255, 255, 255));filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#727a86',EndColorStr='#505864'); border-bottom: 0 solid #33373d;-webkit-box-shadow: inset 0 1px 0 0 #878e98;-moz-box-shadow: inset 0 1px 0 0 #878e98;box-shadow: inset 0 1px 0 0 #878e98;width: 100%;height: 2.8em;line-height: 2.8em;text-indent: 7.9em;display: block;position: relative;font-family: arial, Arial, Helvetica, sans-serif;font-weight: 600;color: #404040;font-size: 1em;text-shadow: 0 
-            0 0 #000}.menu ul li a {background: #fff;border-bottom: 1px solid #efeff0;width: 100%;height: 2.8em;line-height: 2.8em;text-indent: 3.75em;display: block;position: relative;font-family: arial, Arial, Helvetica, sans-serif;font-size: 1em;font-weight: 500;color: #789}.menu ul li:last-child a {border-bottom: 1px solid #33373d}.menu>li>a:hover,.menu>li>a.active{background-color:#2d2d30;background-image:-webkit-gradient(linear,lefttop,left bottom,from(rgb(128,128,128)),to(rgb(128,128,128)));background-image:-webkit-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:-moz-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:-o-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:-ms-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:linear-gradient(top,rgb(199,197,197),rgb(218,214,214)); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#606060', EndColorStr='#202020');border-bottom: 1px solid #404040; -webkit-box-shadow: inset 0 1px 0 0 #404040;-moz-box-shadow: inset 0 1px 0 0 #404040;box-shadow: inset 0 1px 0 0 #404040}.menu>li>a.active {border-bottom: 0 solid #404040}@media only screen and (max-width: 600px) {.menu > li > a:before {left: 22px;}}.menu > li > 
-            a:before {content: '';background-repeat: no-repeat;background-size: contain; background-position: center;font-size: 36px;height: 0.8em;width: 1.7em;position: absolute;left: 42px;top: 50%;margin: -.45em 0 0;} .menu>li>a span {font-size: .95em;display: inline-block;position: absolute;left: .3em;top: 50%;background: #fff;line-height: 1em;height: 1em;padding: .3em .6em;margin: -.8em 0 0;color: #222d36;text-indent: 0;text-align: 
-            center;-webkit-border-radius: .769em;-moz-border-radius: .769em;border-radius: .569em; -webkit-box-shadow: 
-            inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);-moz-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);text-shadow: 0 1px 0 rgba(0, 0, 0, .5); font-weight: 500}.menu>li>a:hover span,.menu>li a.active span {background: 404040}.menu>li>ul li a:before {content: '►';font-size: 9px;color: #789; position: absolute;width: 1em;height: 1em;top: 0;left: -2.7em}.menu>li>ul li:hover a,.menu>li>ul li:hover a 
-            span,.menu>li>ul li:hover a:before { color: #2e9afe}.menu ul>li>a span {font-size: .857em;display: inline-block;position: absolute;right: 1em;top: 50%;background: #fff;border: 1px solid #d0d0d3;line-height: 1em;height: 1em;padding: 0.4em 0.7em;margin: -0.9em 0 0;color: #000;text-indent: 0;text-align: center;-webkit-border-radius: 0.769em;-moz-border-radius: 769em;border-radius: 769em;text-shadow: 0 0 0 rgba(255,255,255,.01);} div.sombreada_css3 {background-color: #282828;width: 100%px;padding: 12px;color: #002399;box-shadow: 0px 
-            1px 1px #333;-webkit-box-shadow: 0px 1px 1px #333; -moz-box-shadow: 0px 1px 1px #333;}*/
-            @charset "UTF-8"; body{font-size: 100%;background: #fff}a {text-decoration: none}ul,ul ul {margin: 0;padding: 0;list-style: none}#wraper {width: 100%;margin: 0 auto;font-size: .8125em}.menu {width: auto;height: auto;-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .73), 0 0 18px 0 rgba(0, 0, 0, .1);-moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .73), 0 0 18px 0 rgba(0, 0, 0, .1);box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .73), 0 0 18px 0 rgba(0, 0, 0, .1)}.menu>li>a { background-color: #000;background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(148, 204, 124))); background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255));background-image: -moz-linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255));background-image: -o-linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255));background-image: -ms-linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255));background-image: linear-gradient(top, rgb(255, 255, 255), rgb(255, 255, 255)); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#727a86', EndColorStr='#505864'); border-bottom: 0 solid #33373d;-webkit-box-shadow: inset 0 1px 0 0 #878e98;-moz-box-shadow: inset 0 1px 0 0 #878e98;box-shadow: inset 0 1px 0 0 #878e98;width: 100%;height: 2.8em;line-height: 2.8em;text-indent: 7.9em;display: block;position: relative;font-family: arial, Arial, Helvetica, sans-serif;font-weight: 600;color: #404040;font-size: 1em;text-shadow: 0 
-                                                                                                                                                                                                        0 0 #000}.menu ul li a {background: #fff;border-bottom: 1px solid #efeff0;width: 100%;height: 2.8em;line-height: 2.8em;text-indent: 3.75em;display: block;position: relative;font-family: arial, Arial, Helvetica, sans-serif;font-size: 1em;font-weight: 500;color: #789}.menu ul li:last-child a {border-bottom: 1px solid #33373d}.menu>li>a:hover,.menu>li>a.active{background-color:#2d2d30;background-image:-webkit-gradient(linear,lefttop,left bottom,from(rgb(128,128,128)),to(rgb(128,128,128)));background-image:-webkit-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:-moz-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:-o-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:-ms-linear-gradient(top,rgb(199,197,197),rgb(218,214,214));background-image:linear-gradient(top,rgb(199,197,197),rgb(218,214,214)); filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#606060', EndColorStr='#202020');border-bottom: 1px solid #404040; -webkit-box-shadow: inset 0 1px 0 0 #404040;-moz-box-shadow: inset 0 1px 0 0 #404040;box-shadow: inset 0 1px 0 0 #404040}.menu>li>a.active {border-bottom: 0 solid #404040}@media only screen and (max-width: 600px) {.menu > li > a:before {left: 22px;}}.menu > li > 
-            a:before {content: '';background-repeat: no-repeat;background-size: contain; background-position: center;font-size: 36px;height: 0.8em;width: 1.7em;position: absolute;left: 50px;top: 50%;margin: -.45em 0 0;} .menu>li>a span {font-size: .95em;display: inline-block;position: absolute;left: .3em;top: 50%;background: #fff;line-height: 1em;height: 1em;padding: .3em .6em;margin: -.8em 0 0;color: #222d36;text-indent: 0;text-align: 
-                                                                                                                                                                                                        center;-webkit-border-radius: .769em;-moz-border-radius: .769em;border-radius: .569em; -webkit-box-shadow: 
-                                                                                                                                                                                                        inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);-moz-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, .16), 0 1px 0 0 rgba(63, 68, 74, .1);text-shadow: 0 1px 0 rgba(0, 0, 0, .5); font-weight: 500}.menu>li>a:hover span,.menu>li a.active span {background: 404040}.menu>li>ul li a:before {content: '\25BA';font-size: 9px;color: #000000; position: absolute;width: 1em;height: 1em;top: 0;left: -2.7em}.menu>li>ul li:hover a,.menu>li>ul li:hover a 
-            span,.menu>li>ul li:hover a:before { color: #2e9afe}.menu ul>li>a span {font-size: .857em;display: inline-block;position: absolute;right: 1em;top: 50%;background: #fff;border: 2px solid #000000;line-height: 1em;height: 1em;padding: 0.4em 0.7em;margin: -0.9em 0 0;color: #000;text-indent: 0;text-align: center;-webkit-border-radius: 0.769em;-moz-border-radius: 769em;border-radius: 769em;text-shadow: 0 0 0 rgba(255,255,255,.01);} div.sombreada_css3 {background-color: #5cb85c;width: 100%px;padding: 12px;color: #002399;box-shadow: 0px 
-                                                                                                                                                                                                        1px 1px #333;-webkit-box-shadow: 0px 1px 1px #333; -moz-box-shadow: 0px 1px 1px #333;}
-
-            .TUR > a:before {
-                background-image: url(/logo/tr.png);
-            }
-
-            .ENG > a:before {
-                background-image: url(/logo/en.png);
-            }
-            .ALE > a:before {
-                background-image: url(/logo/de.png);
-            }
-            .FRA > a:before {
-                background-image: url(/logo/fr.png);
-            }
-            .HOL > a:before {
-                background-image: url(/logo/nl.png);
-            }
-            .POR > a:before {
-                background-image: url(/logo/pt.png);
-            }
-            .MEX > a:before {
-                background-image: url(/logo/mx.png);
-            }
-            .ES > a:before {
-                background-image: url(/logo/es.png);
-            }
-            .IT > a:before {
-                background-image: url(/logo/it.png);
-            }
-            .BEL > a:before {
-                background-image: url(/logo/be.png);
-            }
-            .CR > a:before {
-                background-image: url(/logo/cr.png);
-            }
-            .ESC > a:before {
-                background-image: url(/logo/sx.png);
-            }
-            .USA > a:before {
-                background-image: url(/logo/us.png);
-            }
-            .FUT > a:before {
-                background-image: url(/logo/futnewss.png);
-            }
-            .CHA > a:before {
-                background-image: url(/logo/champions.png);
-            }
-            .UE > a:before {
-                background-image: url(/logo/ue.png);
-            }
-            .COL > a:before {
-                background-image: url(/logo/co.png);
-            }
-            .CHI > a:before {
-                background-image: url(/logo/cl.png);
-            }
-            .ECUA > a:before {
-                background-image: url(/logo/ec.png);
-            }
-            .PE > a:before {
-                background-image: url(/logo/pe.png);
-            }
-            .AR > a:before {
-                background-image: url(/logo/ar.png);
-            }
-            .FIFA > a:before {
-                background-image: url(/logo/fifa.png);
-            }
-            .BRA > a:before {
-                background-image: url(/logo/br.png);
-            }
-            .URU > a:before {
-                background-image: url(/logo/uy.png);
-            }
-            .LIB > a:before {
-                background-image: url(/logo/libertadores.png);
-            }
-            .SUD > a:before {
-                background-image: url(/logo/sud.png);
-            }
-            .UEC > a:before {
-                background-image: url(/logo/uec.png);
-            }
-            .AMERICA> a:before {
-                background-image: url(/logo/copaamerica.png);
-            }
-            .F1 > a:before {
-                background-image: url(/logo/f-1.png);
-            }
-            .F2 > a:before {
-                background-image: url(/logo/f2.png);
-            }
-            .F3 > a:before {
-                background-image: url(/logo/f3.png);
-            }
-            .WWE > a:before {
-                background-image: url(/logo/wwenew.png);
-            }
-            .NBA > a:before {
-                background-image: url(/logo/nbanew2.png);
-            }
-            .NHL > a:before {
-                background-image: url(/logo/nhlnew3.png);
-            }
-            .UFC > a:before {
-                background-image: url(/logo/ufc.png);
-            }
-            .EURO > a:before {
-                background-image: url(/logo/eurocopa.png);
-            }
-            .ARA > a:before {
-                background-image: url(/logo/sa.png);
-            }
-            .AFCCUP > a:before {
-                background-image: url(/logo/afccup.png);
-            }
-            .AEW> a:before {
-                background-image: url(/logo/aew.png);
-            }
-            .ATP > a:before {
-                background-image: url(/logo/atp.png);
-            }
-            .HANDBALL > a:before {
-                background-image: url(/logo/han.png);
-            }
-            .AFRICA > a:before {
-                background-image: url(/logo/africa.png);
-            }
-            .ENDESA > a:before {
-                background-image: url(/logo/endesa.png);
-            }
-            .NFL > a:before {
-                background-image: url(/logo/nfl.png);
-            }
-            .BOX > a:before {
-                background-image: url(/logo/boxeo.png);
-            }
-            .POL > a:before {
-                background-image: url(/logo/pol.png);
-            }
-            .LIB20 > a:before {
-                background-image: url(/logo/lib20.png);
-            }
-            .LVBP > a:before {
-                background-image: url(/logo/lvbp.png);
-            }
-            .OLIM > a:before {
-                background-image: url(/logo/olimpico.png);
-            }
-            .SDC > a:before {
-                background-image: url(/logo/sdc.png);
-            }
-            .PAR > a:before {
-                background-image: url(/logo/paraguay.png);
-            }
-            .UYL > a:before {
-                background-image: url(/logo/uyl.png);
-            }
-            .CONCACAFU20 > a:before {
-                background-image: url(/logo/u20.png);
-            }
-            .CICLISMO > a:before {
-                background-image: url(/logo/ciclismo.png);
-            }
-            .FUTSAL > a:before {
-                background-image: url(/logo/futsal.png);
-            }
-            .MLB > a:before {
-                background-image: url(/logo/mlbnew.png);
-            }
-            .RUG > a:before {
-                background-image: url(/logo/rugby.png);
-            }
-            .NATIONS > a:before {
-                background-image: url(/logo/nations.png);
-            }
-            .LCC > a:before {
-                background-image: url(/logo/lcc.png);
-            }
-            .AFC > a:before {
-                background-image: url(/logo/afc.png);
-            }
-            .MFP > a:before {
-                background-image: url(/logo/mundialfp.png);
-            }
-            .CONCACAFCUP > a:before {
-                background-image: url(/logo/concacafcups.png);
-            }
-            .RECOPASUD > a:before {
-                background-image: url(/logo/recopa.png);
-            }
-            .AMERICUP > a:before {
-                background-image: url(/logo/americup.png);
-            }
-            .RU > a:before {
-                background-image: url(/logo/ru.png);
-            }
-            .VEN > a:before {
-                background-image: url(/logo/ven.png);
-            }
-            .COSQUIN > a:before {
-                background-image: url(/logo/cosquin.png);
-            }
-
-            .RUGBY > a:before {
-                background-image: url(/logo/rugby-union.webp);
-            }
-
-            /* Ajustes Personalizados*/
-
-
-
-            .menu > li.LMB > a:before {
-                background-image: url(/logo/lmb.png);
-                background-repeat: no-repeat;
-                background-size: contain; 
-                background-position: center; 
-                font-size: 36px;
-                height: 0.9em; 
-                width: 2em;
-                position: absolute;
-                left: 45px;
-                top: 55%;
-                margin: -.5em 0 0; 
-            }
-            @media only screen and (max-width: 600px) {
-                body {
-                    font-size: 70%;
-                }
-
-                .menu > li > a:before {
-                    height: 0.91em; 
-                    width: 0.50em;
-                }.menu > li.LMB > a:before {
-
-                    height: 0.95em; 
-                    width: 0.6em;
-                    left: 48px;
-                }
-
-            }
-            /*FIN*/
-
-        </style>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJNJTFQRY0"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-
-            gtag('config', 'G-KJNJTFQRY0');
-        </script>
-    </head>
-    <body link='#547484' onload='guardaHorario();
-            dT();' vlink='#547484' ondragstart="return false" ondrop="return false" onselectstart="return false" oncontextmenu="return false">
-        <div id="wraper">
-            <ul class="menu">
-
-
-
-                <center><div class="sombreada_css3"><font size=2 face="Helvetica Neue,Helvetica,Arial,sans-serif" color="#FFFFFF">
-                        <b>Agenda deportiva del día Sábado 02 de Marzo de 2024</b>
-                        </font></div></center>
-
-
-                <li class="NBA"><a href="#">
-                        NBA: Grizzlies vs. Blazers
-                        <span class="t">02:00</span></a>
-                    <ul>
-                        <li class="subitem1"><a href="/nba" target="_blank">NBA League Pass<span>Calidad 1080p</span></a></li>
-                    </ul>
-                </li>
-
-                <li class="NBA"><a href="#">
-                        NBA: Lakers vs. Nuggets
-                        <span class="t">02:30</span></a>
+      <li class="HOL"><a href="#">
+                        Eredivisie: Ajax vs. Utrecht
+                        <span class="t">12:15</span></a>
                     <ul>
                         <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
-                        <li class="subitem1"><a href="/nba" target="_blank">NBA League Pass<span>Calidad 1080p</span></a></li>
-                    </ul>
-                </li>
-                <li class="NBA"><a href="#">
-                        NBA: Lakers vs. Nuggets
-                        <span class="t">02:30</span></a>
-                    <ul>
-                        <li class="subitem1"><a href="/nba" target="_blank">NBA League Pass<span>Calidad 1080p</span></a></li>
-                    </ul>
-                </li>
-                <li class="USA"><a href="#">
-                        M.: Dallas vs. CF Montréal
-                        <span class="t">02:30</span></a>
-                    <ul>
-                        <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=aHR0cHM6Ly92b29kYy5jb20vZW1iZWQvODU4YTkxOTA5ZDg2OGM5NTg3OTk4Mzg1OTE5MDk4ODk4ODkzLmh0bWw" target="_blank">M.P.<span>Calidad 720p</span></a></li>	
-                    </ul>
-                </li>
-
-                <li class="USA"><a href="#">
-                        M.: Chicago Fire vs. Cincinnati
-                        <span class="t">02:30</span></a>
-                    <ul>
-                        <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=aHR0cHM6Ly92b29kYy5jb20vZW1iZWQvODU4YTkxOTA5ZDg2OGM5NTg3OTk4Mzg1OTE4Zjk4ODk4ODkyLmh0bWw" target="_blank">M.P.<span>Calidad 720p</span></a></li>	
-                    </ul>
-                </li>
-
-                <li class="USA"><a href="#">
-                        M.: Houston Dynamo vs. New York RB
-                        <span class="t">02:30</span></a>
-                    <ul>
-                        <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=aHR0cHM6Ly92b29kYy5jb20vZW1iZWQvODU4YTkxOTA5ZDg2OGM5NTg3OTk4Mzg1OTI4Nzk4ODk4ODk0Lmh0bWw" target="_blank">M.P.<span>Calidad 720p</span></a></li>
-                    </ul>
-                </li>
-
-                <li class="USA"><a href="#">
-                        M.: St. Louis City vs. New York City
-                        <span class="t">02:30</span></a>
-                    <ul>
-                        <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=aHR0cHM6Ly92b29kYy5jb20vZW1iZWQvODU4YTkxOTA5ZDg2OGM5NTg3OTk4Mzg1OTI4OTk4ODk4ODk2Lmh0bWw" target="_blank">M.P.<span>Calidad 720p</span></a></li>
-                    </ul>
-                </li>
-
-                <li class="USA"><a href="#">
-                        M.: Sporting KC vs. Philadelphia Union
-                        <span class="t">02:30</span></a>
-                    <ul>
-                        <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=aHR0cHM6Ly92b29kYy5jb20vZW1iZWQvODU4YTkxOTA5ZDg2OGM5NTg3OTk4Mzg1OTI4ODk4ODk4ODk1Lmh0bWw" target="_blank">M.P.<span>Calidad 720p</span></a></li>
-                    </ul>
-                </li>
-                <li class="USA"><a href="#">
-                        M: Colorado Rapids vs. Nashville SC
-                        <span class="t">03:30</span></a>
-                    <ul>
+                  <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn" target="_blank"><b>Espn</b><span>Calidad 720p</span></a></li>
 
                     </ul>
                 </li>
-                <li class="BOXEO"><a href="#">
-                        Boxeo de Primera: Vilte vs. Sabattino / Cudos vs. Colmenarez
-                        <span class="t">03:45</span></a>
-                    <ul>
-                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/tyc-sports" target="_blank"><b>Tyc Sports</b><span>Calidad 720p</span></a></li>
-                        <li class="subitem1"><a href="/tyc-sports-play" target="_blank">TyC Sports Play<span>Calidad 720p</span></a></li>		
-                    </ul>
-                </li>
-                <li class="MEX"><a href="#">
-                        Liga MX: Atlas vs. América
-                        <span class="t">04:00</span></a>
-                    <ul>
-                        <li class="subitem1"><a href="/vix" target="_blank">VIX<span>Calidad 1080p</span></a></li>
-                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=dHVkbnVz" target="_blank">TUDN US(USA-MX-CAN/VPN)<span>Calidad 720p</span></a></li>
-                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=Y2FuYWw1" target="_blank">Canal 5<span>Calidad 720p</span></a></li>
-                        <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/tudn" target="_blank"><b>TUDN MX</b><span>Calidad 720p</span></a></li>
-                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=YXp0ZWNhNw==" target="_blank">Azteca 7<span>Calidad 720p</span></a></li>
 
-                    </ul>
-                </li>
-                <li class="NHL"><a href="#">
-                        NHL: Pittsburgh Penguins vs. Calgary Flames
-                        <span class="t">04:00</span></a>
-                    <ul>
-                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
-
-                    </ul>
-                </li>
-                <li class="CONCACAFCUP"><a href="#">
-                        Copa Oro Femenina: Brasil vs. Argentina
-                        <span class="t">04:15</span></a>
+                <li class="IT"><a href="#">
+                        Serie A: Hellas Verona vs. Sassuolo
+                        <span class="t">12:30</span></a>
                     <ul>
                         <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
                         <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                       <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn-2" target="_blank"><b>Espn 2</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbjJjbw==" target="_blank">Espn 2 CO<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=VE5UU1BPUlRTMVVL" target="_blank">TNT Sports GB<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=c2t5c3BvcnRzMjUxaXQ=" target="_blank">Sky Sports 251 IT<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=c2t5c3BvcnRjYWxjaW9pdA==" target="_blank">Sky Sport Calcio IT<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U1BPUlRUVjRQVA==" target="_blank">Sport TV 4 PT<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="FRA"><a href="#">
+                        Ligue 1: Toulouse vs. Nice
+                        <span class="t">13:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                       <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn-3" target="_blank"><b>Espn 3</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbjNjbw==" target="_blank">Espn 3 CO<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=VE5UU1BPUlRTMlVL" target="_blank">TNT Sports 2 GB<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=Tk9WQVNQT1JUMUNa" target="_blank">Nova Sport 1 CZ<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=RUxFVkVOU1BPUlRTM1BU" target="_blank">Eleven Sports 3 PT<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="ESC"><a href="#">
+                        Scottish Premiership: Hearts vs. Celtic
+                        <span class="t">13:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                       <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/fox-sports" target="_blank"><b>Fox Sports AR</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U0tZU1BPUlRGT09UQkFMTFVL" target="_blank">Sky Sport Fotball GB<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U0tZU1BPUlRNQUlORVZFTlRVSw==" target="_blank">Sky Sport Maint Event GB<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U1BPUlRUVjVQVA==" target="_blank">Sport TV 5 PT<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+                <li class="ALE"><a href="#">
+                        Bundesliga 2: Hamburger SV vs. Osnabrück
+                        <span class="t">13:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=c2t5YnVuZGVzbGlnYTJkZQ==" target="_blank">Sky Bundesliga 2 DE(UE/VPN)<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="ALE"><a href="#">
+                        Bundesliga 2: Paderborn vs. Magdeburg
+                        <span class="t">13:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=c2t5YnVuZGVzbGlnYTNkZQ==" target="_blank">Sky Bundesliga 3 DE(UE/VPN)<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="ALE"><a href="#">
+                        Bundesliga 2: Elversberg vs. Wehen Wiesbaden
+                        <span class="t">13:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=c2t5YnVuZGVzbGlnYTRkZQ==" target="_blank">Sky Bundesliga 4 DE(UE/VPN)<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+                <li class="ENG"><a href="#">
+                        Women’s Super League: Arsenal vs. Tottenham Hotspur
+                        <span class="t">13:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="ES"><a href="#">
+                        LaLiga EA Sports: Villarreal vs. Granada
+                        <span class="t">14:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                       <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/dsports" target="_blank"><b>Dsports </b><span>Calidad 720p</span></a></li>
                         <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=ZXNwbmRlcG9ydGVzdXNz"target="_blank">Espn Deportes US(US-MX-CAN/VPN)<span>Calidad 1080p</span></a></li>
-                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbjJteA==" target="_blank">ESPN 2 MX<span>Calidad 720p</span></a></li>
-
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=UFJFTUlFUlNQT1JUUzFVSw==" target="_blank">Premier sports 1 UK<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=dHYyc3BvcnRwcmVtaXVtbm8=" target="_blank">TV2 Sport Premium NO<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=RUxFVkVOU1BPUlRTMlBU" target="_blank">Eleven Sports 2 PT<span>Calidad 720p</span></a></li>
                     </ul>
                 </li>
-                <li class="USA"><a href="#">
-                        M.: SJ Earthquakes vs. LA Galaxy
-                        <span class="t">04:30</span></a>
+
+                <li class="ES"><a href="#">
+                        LaLiga Hypermotion: Andorra vs. Real Valladolid
+                        <span class="t">14:00</span></a>
                     <ul>
-                        <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=aHR0cHM6Ly92b29kYy5jb20vZW1iZWQvODU4YTkxOTA5ZDg3ODk5Nzg3OTk4Mzg1OTQ4ODk4ODk4YTkyLmh0bWw" target="_blank">M.P.<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=bGxoeXBlcg==" target="_blank">LaLiga TV Hypermotion ES<span>Calidad 1080p</span></a></li>
                     </ul>
                 </li>
 
-                <li class="USA"><a href="#">
-                        M.: Seattle Sounders FC vs. Austin
-                        <span class="t">04:30</span></a>
+                <li class="ES"><a href="#">
+                        LaLiga Hypermotion: Andorra vs. Real Valladolid
+                        <span class="t">14:00</span></a>
                     <ul>
-                        <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=aHR0cHM6Ly92b29kYy5jb20vZW1iZWQvODU4YTkxOTA5ZDg3ODk5Nzg3OTk4Mzg1OTQ4YTk4ODk4YTk0Lmh0bWw" target="_blank">M.P.<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=bGxoeXBlcjI=" target="_blank">LaLiga TV Hypermotion 2 ES<span>Calidad 1080p</span></a></li>
                     </ul>
                 </li>
 
-                <li class="USA"><a href="#">
-                        M.: Portland Timbers vs. DC United
-                        <span class="t">04:30</span></a>
+                <li class="ENG"><a href="#">
+                        Premier League: Burnley vs. AFC Bournemouth
+                        <span class="t">14:00</span></a>
                     <ul>
-                        <li class="subitem1"><a href="https://pelotalibre.online/embed/eventos?r=aHR0cHM6Ly92b29kYy5jb20vZW1iZWQvODU4YTkxOTA5ZDg3ODk5Nzg3OTk4Mzg1OTQ4Nzk4ODk4YTkxLmh0bWw" target="_blank">M.P.<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                     <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn" target="_blank"><b>Espn</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbmNv" target="_blank">Espn CO<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=REFaTjFFUw==" target="_blank">Dazn 1 ES<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U0tZUFJFTUlFUkxFQUdVRVVL" target="_blank">Sky Sport Premier L.<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U0tZU1BPUlRNQUlORVZFTlRVSw==" target="_blank">Sky Sport Maint Event GB<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=dXNhbmV0d29yazE=" target="_blank">USA Network<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=RUxFVkVOU1BPUlRTMVBU" target="_blank">Eleven Sports 1 PT<span>Calidad 720p</span></a></li>
                     </ul>
                 </li>
-            </ul>
-        </div>
 
+                <li class="URU"><a href="#">
+                        Primera División: Fénix vs. Boston River
+                        <span class="t">14:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
 
+                <li class="HOL"><a href="#">
+                        Eredivisie: PSV vs. Feyenoord
+                        <span class="t">14:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                       <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn-2" target="_blank"><b>Espn 2</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbjJjbw==" target="_blank">Espn 2 CO<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbjJwZQ==" target="_blank">Espn 2 PE(VPN/PE)<span>Calidad 720p</span></a></li>
+                  <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn" target="_blank"><b>Espn</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U1BPUlRUVjNQVA==" target="_blank">Sport TV 3 PT<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
 
-        <!--initiate accordion-->
-        <script type="text/javascript">
-            $(function () {
+                <li class="IT"><a href="#">
+                        Serie A: Empoli vs. Cagliari
+                        <span class="t">15:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                       <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn-4" target="_blank"><b>Espn 4</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbjRjbw==" target="_blank">Espn 4 CO<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbjRwZQ==" target="_blank">Espn 4 PE(VPN/PE)<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=VE5UU1BPUlRTMlVL" target="_blank">TNT Sports 2 GB<span>Calidad 1080p</span></a></li>
 
-                var menu_ul = $('.menu > li > ul'),
-                        menu_a = $('.menu > li > a');
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U1BPUlRUVjRQVA==" target="_blank">Sport TV 4 PT<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
 
-                menu_ul.hide();
+                <li class="IT"><a href="#">
+                        Serie A: Frosinone vs. Lecce
+                        <span class="t">15:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
 
-                menu_a.click(function (e) {
-                    e.preventDefault();
-                    if (!$(this).hasClass('active')) {
-                        menu_a.removeClass('active');
-                        menu_ul.filter(':visible').slideUp('fast');
-                        $(this).addClass('active').next().stop(true, true).slideDown('fast');
-                    } else {
-                        $(this).removeClass('active');
-                        $(this).next().stop(true, true).slideUp('fast');
-                    }
-                });
+                <li class="ALE"><a href="#">
+                        Bundesliga: Köln vs. Bayer Leverkusen
+                        <span class="t">15:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
 
-            });
-        </script>
+                       <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn-2" target="_blank"><b>Espn 2</b><span>Calidad 720p</span></a></li>
+                      <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn-5" target="_blank"><b>Espn 5</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U0tZU1BPUlRGT09UQkFMTFVL" target="_blank">Sky Sport Fotball GB<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=VlNQT1JUMl9OTw==" target="_blank">V Sport 2 NO<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=RUxFVkVOU1BPUlRTM1BU" target="_blank">Eleven Sports 3 PT<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
 
-        <br>
+                <li class="ES"><a href="#">
+                        LaLiga EA Sports: Atlético Madrid vs. Real Betis
+                        <span class="t">16:15</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                       <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/dsports" target="_blank"><b>Dsports </b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=ZXNwbmRlcG9ydGVzdXNz"target="_blank">Espn Deportes US(US-MX-CAN/VPN)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=UFJFTUlFUlNQT1JUUzFVSw==" target="_blank">Premier sports 1 UK<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=dHNuNWNh" target="_blank">TSN 5 CA<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=dHYyc3BvcnRwcmVtaXVtbm8=" target="_blank">TV2 Sport Premium NO<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=RUxFVkVOU1BPUlRTMlBU" target="_blank">Eleven Sports 2 PT<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
 
-        <!--    </div>-->
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTop.nav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-            if (window == window.top) {
-                window.location.replace("/");
-            }
-        </script>
+                <li class="ES"><a href="#">
+                        LaLiga Hypermotion: Tenerife vs. Mirandés
+                        <span class="t">16:15</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=bGxoeXBlcg==" target="_blank">LaLiga TV Hypermotion ES<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
 
-    </body>
-</html>
+                <li class="IT"><a href="#">
+                        Serie B: Como vs. Venezia
+                        <span class="t">16:15</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=c2t5c3BvcnRzMjUxaXQ=" target="_blank">Sky Sports 251 IT<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="IT"><a href="#">
+                        Serie B: Bari 1908 vs. Spezia
+                        <span class="t">16:15</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=c2t5c3BvcnRzMjUyaXQ=" target="_blank">Sky Sports 252 IT<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="IT"><a href="#">
+                        Serie B: FeralpiSalò vs. Sampdoria
+                        <span class="t">16:15</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=c2t5c3BvcnRzMjUzaXQ=" target="_blank">Sky Sports 253 IT<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="IT"><a href="#">
+                        Serie B: Cittadella vs. Pisa
+                        <span class="t">16:15</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=c2t5c3BvcnRzMjU0aXQ=" target="_blank">Sky Sports 254 IT<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="IT"><a href="#">
+                        Serie B: Ascoli vs. Reggiana
+                        <span class="t">16:15</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=c2t5c3BvcnRzMjU1aXQ=" target="_blank">Sky Sports 255 IT<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="IT"><a href="#">
+                        Serie B: Cosenza vs. Catanzaro
+                        <span class="t">16:15</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U0tZMjU2" target="_blank">Sky Sports 256 IT<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="ENG"><a href="#">
+                        Premier League: Manchester City vs. Manchester United
+                        <span class="t">16:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                     <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn" target="_blank"><b>Espn</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbmNv" target="_blank">Espn CO<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbnBl" target="_blank">Espn PE(VPN/PE)<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=REFaTjFFUw==" target="_blank">Dazn 1 ES<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U0tZUFJFTUlFUkxFQUdVRVVL" target="_blank">Sky Sport Premier L.<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U0tZU1BPUlRNQUlORVZFTlRVSw==" target="_blank">Sky Sport Maint Event GB<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=c2t5c3BvcnR1bm9pdA==" target="_blank">Sky Sport Uno IT<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=RUxFVkVOU1BPUlRTMVBU" target="_blank">Eleven Sports 1 PT<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="POR"><a href="#">
+                        Primeira Liga: Casa Pia vs. Gil Vicente
+                        <span class="t">16:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U1BPUlRUVjFQVA==" target="_blank">Sport TV 1 PT<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="POR"><a href="#">
+                        Primeira Liga: Portimonense vs. Vizela
+                        <span class="t">16:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U1BPUlRUVjJQVA==" target="_blank">Sport TV 2 PT<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="TUR"><a href="#">
+                        Süper Lig: Beşiktaş vs. Galatasaray
+                        <span class="t">17:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="FRA"><a href="#">
+                        Ligue 1: Rennes vs. Lorient
+                        <span class="t">17:05</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=Tk9WQVNQT1JUMUNa" target="_blank">Nova Sport 1 CZ<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=QVJFTkFTUE9SVDE=" target="_blank">Arena Sport 1 HR<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="ALE"><a href="#">
+                        Bundesliga: Hoffenheim vs. Werder Bremen
+                        <span class="t">17:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=VlNQT1JUMl9OTw==" target="_blank">V Sport 2 NO<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=RUxFVkVOU1BPUlRTM1BU" target="_blank">Eleven Sports 3 PT<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="IT"><a href="#">
+                        Serie A: Atalanta vs. Bologna
+                        <span class="t">18:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                       <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn-4" target="_blank"><b>Espn 4</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbjRjbw==" target="_blank">Espn 4 CO<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbjRwZQ==" target="_blank">Espn 4 PE(VPN/PE)<span>Calidad 720p</span></a></li>
+                  <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn" target="_blank"><b>Espn</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=VE5UU1BPUlRTMlVL" target="_blank">TNT Sports 2 GB<span>Calidad 1080p</span></a></li>
+                  <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn" target="_blank"><b>Espn</b><span>Calidad 720p</span></a></li>
+
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U1BPUlRUVjVQVA==" target="_blank">Sport TV 5 PT<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="ES"><a href="#">
+                        LaLiga EA Sports: Mallorca vs. Girona
+                        <span class="t">18:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                       <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn-2" target="_blank"><b>Espn 2</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbmNv" target="_blank">Espn CO<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbnBl" target="_blank">Espn PE(VPN/PE)<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=ZXNwbmRlcG9ydGVzdXNz"target="_blank">Espn Deportes US(US-MX-CAN/VPN)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=UFJFTUlFUlNQT1JUUzFVSw==" target="_blank">Premier sports 1 UK<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=RUxFVkVOU1BPUlRTMlBU" target="_blank">Eleven Sports 2 PT<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=dHYyc3BvcnRwcmVtaXVtbm8=" target="_blank">TV2 Sport Premium NO<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="ES"><a href="#">
+                        LaLiga Hypermotion: Real Zaragoza vs. Amorebieta
+                        <span class="t">18:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=bGxoeXBlcg==" target="_blank">LaLiga TV Hypermotion ES<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="IT"><a href="#">
+                        Serie B: Modena vs. Cremonese
+                        <span class="t">18:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=c2t5c3BvcnRzMjUxaXQ=" target="_blank">Sky Sports 251 IT<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="ENG"><a href="#">
+                        Women’s Super League: Leicester City WFC vs. Chelsea FC
+                        <span class="t">19:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U0tZUFJFTUlFUkxFQUdVRVVL" target="_blank">Sky Sport Premier L.<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U0tZU1BPUlRGT09UQkFMTFVL" target="_blank">Sky Sport Fotball GB<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U0tZU1BPUlRNQUlORVZFTlRVSw==" target="_blank">Sky Sport Maint Event GB<span>Calidad 1080p</span></a></li>	
+                    </ul>
+                </li>
+
+                <li class="ECUA"><a href="#">
+                        LigaPro: Universidad Católica vs. El Nacional
+                        <span class="t">19:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="POR"><a href="#">
+                        Primeira Liga: Sporting CP vs. Farense
+                        <span class="t">19:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U1BPUlRUVjJQVA==" target="_blank">Sport TV 2 PT<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="NBA"><a href="#">
+                        NBA: Mavericks vs. 76ers
+                        <span class="t">19:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/ev/nba/" target="_blank">NBA League Pass<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="BRA"><a href="#">
+                        Campeonato Carioca: Fluminense vs. Botafogo
+                        <span class="t">20:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U1BPUlRUVjVQVA==" target="_blank">Sport TV 5 PT<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="IT"><a href="#">
+                        Serie A: Napoli vs. Juventus
+                        <span class="t">20:45</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                       <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn-2" target="_blank"><b>Espn 2</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbmNv" target="_blank">Espn CO<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbnBl" target="_blank">Espn PE(VPN/PE)<span>Calidad 720p</span></a></li>
+                  <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn" target="_blank"><b>Espn</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=VE5UU1BPUlRTMVVL" target="_blank">TNT Sports GB<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U1BPUlRUVjNQVA==" target="_blank">Sport TV 3 PT<span>Calidad 720p</span></a></li>
+                  <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn" target="_blank"><b>Espn</b><span>Calidad 720p</span></a></li>
+
+                    </ul>
+                </li>
+
+                <li class="FRA"><a href="#">
+                        Ligue 1: Olympique Lyonnais vs. Lens
+                        <span class="t">20:45</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=VE5UU1BPUlRTMlVL" target="_blank">TNT Sports 2 GB<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=c2t5c3BvcnRjYWxjaW9pdA==" target="_blank">Sky Sport Calcio IT<span>Calidad 1080p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=RUxFVkVOU1BPUlRTMlBU" target="_blank">Eleven Sports 2 PT<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="ES"><a href="#">
+                        LaLiga EA Sports: Athletic Club vs. Barcelona
+                        <span class="t">21:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                       <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/dsports" target="_blank"><b>Dsports </b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=ZXNwbmRlcG9ydGVzdXNz"target="_blank">Espn Deportes US(US-MX-CAN/VPN)<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=UFJFTUlFUlNQT1JUUzFVSw==" target="_blank">Premier sports 1 UK<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=YmVpbmZy" target="_blank">Bein Sports FR <span>Calidad 750p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=VFYyX1NQT1JUXzFfTk8=" target="_blank">TV2 Sport 1 NO<span>Calidad 720p</span></a></li>	
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=RUxFVkVOU1BPUlRTMVBU" target="_blank">Eleven Sports 1 PT<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="ES"><a href="#">
+                        LaLiga Hypermotion: Leganés vs. Eibar
+                        <span class="t">21:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=bGxoeXBlcg==" target="_blank">LaLiga TV Hypermotion ES<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="AR"><a href="#">
+                        Primera B Nacional: Chacarita Juniors vs. Talleres Remedios
+                        <span class="t">21:00</span></a>
+                    <ul>
+                    <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/tyc-sports" target="_blank"><b>Tyc Sports</b><span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="AR"><a href="#">
+                        Copa de la Liga Profesional: Defensa y Justicia vs. Lanús
+                        <span class="t">21:00</span></a>
+                    <ul>
+                      <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/tnt-sports" target="_blank"><b>Tnt sports</b><span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="AR"><a href="#">
+                        Copa de la Liga Profesional: Godoy Cruz vs. Estudiantes
+                        <span class="t">21:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                       <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn-premium" target="_blank"><b>Espn Premium</b><span>Calidad 720p</span></a></li>
+                     <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn" target="_blank"><b>Espn</b><span>Calidad 720p</span></a></li>
+                   <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/tv-publica" target="_blank"><b>TV Pública</b><span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="PE"><a href="#">
+                        Liga 1: Los Chankas vs. Sport Boys
+                        <span class="t">21:00</span></a>
+                    <ul>
+               <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=bGlnYTFtYXhwZQ==" target="_blank">L1 MAX<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="URU"><a href="#">
+                        Primera División: Liverpool vs. Deportivo Maldonado
+                        <span class="t">21:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="VEN"><a href="#">
+                        Liga FUTVE: Caracas vs. Deportivo Táchira
+                        <span class="t">21:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+                <li class="AR"><a href="#">
+                        Primera Nacional: Arsenal Sarandi vs. San Miguel
+                        <span class="t">21:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/tyc-sports-play" target="_blank">Tyc Sports Play<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+                <li class="AR"><a href="#">
+                        Primera Nacional: Chacarita Juniors vs. CA Talleres
+                        <span class="t">21:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/tyc-sports-play" target="_blank">Tyc Sports Play<span>Calidad 720p</span></a></li>
+                    <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/tyc-sports" target="_blank"><b>Tyc Sports</b><span>Calidad 720p</span></a></li>
+
+                    </ul>
+                </li>
+                <li class="AR"><a href="#">
+                        Primera Nacional: Temperley vs. Chaco For Ever
+                        <span class="t">21:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/tyc-sports-play" target="_blank">Tyc Sports Play<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+                <li class="AR"><a href="#">
+                        Primera Nacional: Deportivo Morón vs. San Telmo
+                        <span class="t">21:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/tyc-sports-play" target="_blank">Tyc Sports Play<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+                <li class="AR"><a href="#">
+                        Primera Nacional: Aldosivi vs. Almirante Brown
+                        <span class="t">21:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/tyc-sports-play" target="_blank">Tyc Sports Play<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+                <li class="AR"><a href="#">
+                        Primera Nacional: Gimnasia y Tiro vs. Defensores Unión
+                        <span class="t">21:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/tyc-sports-play" target="_blank">Tyc Sports Play<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+                <li class="AR"><a href="#">
+                        Primera Nacional: Ca Mitre vs. Ca Atlanta
+                        <span class="t">21:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/tyc-sports-play" target="_blank">Tyc Sports Play<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+                <li class="AR"><a href="#">
+                        Primera Nacional: Guillermo Brown vs. Deportivo Maipú
+                        <span class="t">21:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/tyc-sports-play" target="_blank">Tyc Sports Play<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+                <li class="ECUA"><a href="#">
+                        LigaPro: Técnico Universitario vs. Cumbayá
+                        <span class="t">21:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="POR"><a href="#">
+                        Primeira Liga: Porto vs. Benfica
+                        <span class="t">21:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp2?r=U1BPUlRUVjFQVA==" target="_blank">Sport TV 1 PT<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="NBA"><a href="#">
+                        NBA: Celtics vs. Warriors
+                        <span class="t">21:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/ev/nba/" target="_blank">NBA League Pass<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="NBA"><a href="#">
+                        NBA: Timberwolves vs. Clippers
+                        <span class="t">21:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/ev/nba/" target="_blank">NBA League Pass<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="CHI"><a href="#">
+                        Primera División: Colo-Colo vs. Huachipato
+                        <span class="t">22:00</span></a>
+                    <ul>
+                       <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/tnt-sports" target="_blank"><b>Tnt sports</b><span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="COL"><a href="#">
+                        Liga BetPlay: Atlético Bucaramanga vs. Patriotas Boyacá
+                        <span class="t">22:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/ev/vix-plus/" target="_blank">VIX+<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="HN"><a href="#">
+                        Primera División: Victoria vs. Olimpia
+                        <span class="t">22:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=dHZjZGVwb3J0ZXM=" target="_blank">TVC Deportes(Solo MX/VPN)<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="BRA"><a href="#">
+                        Campeonato Carioca: Vasco da Gama vs. Portuguesa RJ
+                        <span class="t">22:10</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=cHJlbWllcmU=" target="_blank">Premiere BR<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="CONCACAFCUP"><a href="#">
+                        Copa Oro Femenina: México vs. Paraguay
+                        <span class="t">23:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                  <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn" target="_blank"><b>Espn</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=ZXNwbmRlcG9ydGVzdXNz"target="_blank">Espn Deportes US(US-MX-CAN/VPN)<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+                <li class="AR"><a href="#">
+                        Primera Nacional: San Martón vs. Ferro Carril Oeste
+                        <span class="t">23:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/tyc-sports-play" target="_blank">Tyc Sports Play<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+                <li class="AR"><a href="#">
+                        Copa de la Liga Profesional: Boca Juniors vs. Belgrano
+                        <span class="t">23:15</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                       <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn-premium" target="_blank"><b>Espn Premium</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbmNv" target="_blank">Espn CO<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=ZXNwbnBl" target="_blank">Espn PE(VPN/PE)<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="ECUA"><a href="#">
+                        LigaPro: Barcelona vs. Imbabura
+                        <span class="t">00:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="URU"><a href="#">
+                        Primera División: Rampla Juniors vs. Peñarol
+                        <span class="t">00:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="NBA"><a href="#">
+                        NBA: Magics vs. Pistons
+                        <span class="t">00:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/ev/nba/" target="_blank">NBA League Pass<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="NBA"><a href="#">
+                        NBA: Raptors vs. Hornets
+                        <span class="t">00:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/ev/nba/" target="_blank">NBA League Pass<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="HN"><a href="#">
+                        Primera División: Olancho vs. Marathón
+                        <span class="t">00:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=dHZjZGVwb3J0ZXM=" target="_blank">TVC Deportes(Solo MX/VPN)<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+                <li class="AR"><a href="#">
+                        Primera Nacional: Patronato vs. Racing Córdoba
+                        <span class="t">00:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/tyc-sports-play" target="_blank">Tyc Sports Play<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+                <li class="COL"><a href="#">
+                        Liga BetPlay: Medellín vs. Rionegro Águilas
+                        <span class="t">00:10</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/ev/vix-plus/" target="_blank">VIX+<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="CHI"><a href="#">
+                        Primera División: Unión La Calera vs. Deportes Iquique
+                        <span class="t">00:30</span></a>
+                    <ul>
+                       <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/tnt-sports" target="_blank"><b>Tnt sports</b><span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="BRA"><a href="#">
+                        Copa do Brasil: Fluminense PI vs. Fortaleza
+                        <span class="t">00:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=cHJlbWllcmU=" target="_blank">Premiere BR<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="PE"><a href="#">
+                        Liga 1: Cienciano vs. Carlos Manucci
+                        <span class="t">01:00</span></a>
+                    <ul>
+               <li class="subitem1"><a href="https://pelotalibre.online/embed/opc?r=bGlnYTFtYXhwZQ==" target="_blank">L1 MAX<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="NBA"><a href="#">
+                        NBA: Cavaliers vs. Knicks
+                        <span class="t">01:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/ev/nba/" target="_blank">NBA League Pass<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="NBA"><a href="#">
+                        NBA: Spurs vs. Pacers
+                        <span class="t">01:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/ev/nba/" target="_blank">NBA League Pass<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+                <li class="AR"><a href="#">
+                        Primera Nacional: Estudiantes RC vs. Ca Cólon
+                        <span class="t">00:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/tyc-sports-play" target="_blank">Tyc Sports Play<span>Calidad 720p</span></a></li>
+                    <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/tyc-sports" target="_blank"><b>Tyc Sports</b><span>Calidad 720p</span></a></li>
+
+                    </ul>
+                </li>
+                <li class="AR"><a href="#">
+                        Copa de la Liga Profesional: Newell's Old Boys vs. San Lorenzo
+                        <span class="t">01:30</span></a>
+                    <ul>
+                      <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/tnt-sports" target="_blank"><b>Tnt sports</b><span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="AR"><a href="#">
+                        Primera B Nacional: Estudiantes Río Cuarto vs. Colón
+                        <span class="t">01:30</span></a>
+                    <ul>
+                    <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/tyc-sports" target="_blank"><b>Tyc Sports</b><span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="MEX"><a href="#">
+                        Liga MX: Monterrey vs Pumas UNAM
+                        <span class="t">02:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/ev/vix-plus/" target="_blank">VIX+<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=dHVkbnVz" target="_blank">TUDN US(USA-MX-CAN/VPN)Op.1<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="HN"><a href="#">
+                        Primera División: Motagua vs. Vida
+                        <span class="t">02:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=dHZjZGVwb3J0ZXM=" target="_blank">TVC Deportes<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=Zm94ZGVwb3J0ZXNjbGFwcA=="target="_blank">Fox Deportes(US-MX-CAN/VPN)<span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="CONCACAFCUP"><a href="#">
+                        Copa Oro Femenina: EE. UU. vs. Colombia
+                        <span class="t">02:15</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/star-plus" target="_blank">Star+<span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="/star-plus-b" target="_blank">Star+ BR<span>Calidad 720p</span></a></li>
+                  <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/espn" target="_blank"><b>Espn</b><span>Calidad 720p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=ZXNwbmRlcG9ydGVzdXNz"target="_blank">Espn Deportes US(US-MX-CAN/VPN)<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="COL"><a href="#">
+                        Liga BetPlay: Alianza Petrolera vs. Santa Fe
+                        <span class="t">02:20</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/ev/vix-plus/" target="_blank">VIX+<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="NBA"><a href="#">
+                        NBA: Suns vs. Thunder
+                        <span class="t">03:30</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/ev/nba/" target="_blank">NBA League Pass<span>Calidad 1080p</span></a></li>
+                    </ul>
+                </li>
+
+                <li class="MEX"><a href="#">
+                        Liga MX: Tijuana vs. León
+                        <span class="t">04:00</span></a>
+                    <ul>
+                        <li class="subitem1"><a href="/ev/vix-plus/" target="_blank">VIX+<span>Calidad 1080p</span></a></li>
+                        <li class="subitem1"><a href="https://pelotalibre.online/embed/opcp1?r=dHVkbnVz" target="_blank">TUDN US(USA-MX-CAN/VPN)Op.1<span>Calidad 720p</span></a></li>
+                      <li class="subitem1"><a href="https://pelotalibre.online/en-vivo/fox-sports-premium-mx" target="_blank"><b>Fox Sports Premium MX</b><span>Calidad 720p</span></a></li>
+                    </ul>
+                </li>
